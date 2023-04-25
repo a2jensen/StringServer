@@ -7,7 +7,7 @@
 
 -StringServer First Output:
 
-![Image](output1.png)
+![Image](hello.png)
 
 - Method `handle`is called(in the class `MyHandler`)
 - The values of the class fields are:
@@ -21,7 +21,7 @@
 
 -StringServer Second Output:
 
-![Image](output2.png)
+![Image](how are you.png)
 
 - Method `handle`is called(in the class `MyHandler`)
 - The values of the class fields are:
