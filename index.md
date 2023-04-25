@@ -6,6 +6,8 @@
 
 -StringServer First Output:
 
+![Image](output1.png)
+
 - Method `handle`is called(in the class `MyHandler`)
 - The values of the class fields are:
   * `HttpExchange t = localhost:17/add-message?s=hello`
@@ -17,6 +19,8 @@
 
 
 -StringServer Second Output:
+
+![Image](output2.png)
 
 - Method `handle`is called(in the class `MyHandler`)
 - The values of the class fields are:
