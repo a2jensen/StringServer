@@ -2,7 +2,8 @@
 
 -String Server code:
 
-![Image](StringServerCode.png)
+![Image](stringserver1.png)
+![Image](stringserver2.png)
 
 -StringServer First Output:
 
