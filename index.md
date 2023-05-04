@@ -62,7 +62,7 @@ public void testReverseInPlaceNoFailure() {
 -The problem with the failure-inducing input was that the method ran where it ended up overwriting each element of the array with the value at the corresponding position from the end of the array(instead of reverseing the elements).
 
 -Non-failure output
-![Image](non-failure.png)
+![Image](nonfailure.png)
 -Here the non-failure input correctly passes the tester.
 
 Bug fix:
