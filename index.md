@@ -35,7 +35,8 @@
   
   # Part 2
 
--The bug I will be going through from this lab is from the method reverseInPlace(int[] arr)
+-The bug I will be going through from this lab is from the method reverseInPlace(int[] arr).The given method reverseInPlace takes 
+an array of integers arr as input and modifies the input array by reversing its elements in place.
 
 -Failure-inducing input:
 ```
@@ -45,6 +46,7 @@ public void testReverseInPlaceFailure() {
     assertArrayEquals(new int[]{5, 4, 3, 2, 1}, arr);
 }
 ```
+The test output would have the array differed at element[3], where the expected value would be 2 but was 4 instead. The reason for this is because the original code does not reverse the elements of the array, but instead overwrites each element with the value at the corresponding position from the end of the array.
 
 -Non-failure input:
 ```
@@ -54,6 +56,7 @@ public void testReverseInPlaceNoFailure() {
     assertArrayEquals(new int[]{3, 2, 1}, arr);
 }
 ```
+Here with this input, the method correctly 
 Bug fix:
  -Original code:
  ```
