@@ -58,14 +58,15 @@ public void testReverseInPlaceNoFailure() {
 
 -Failure-inducing output:
 ![Image](failure.png)
--The problem with the failure-inducing input was that the method ran where it ended up overwriting each element of the array with the value at the corresponding position from the end of the array(instead of reverseing the elements).
+The approach does not swap the elements correctly as it overwrites the original values of the array with the swapped values, which then results in the elements of the array becoming the same as the last element.
 
 -Non-failure output
 ![Image](nonfailure.png)
--Here the non-failure input correctly passes the tester.
+Here the non-failure input correctly passes the tester.
 
 Bug fix:
- -Original code:
+  
+  -Original code:
  ```
  static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
@@ -74,6 +75,8 @@ Bug fix:
   ```
   
   -Fixed Code:
+  
+  This implementation correctly swaps the first and last elements, then moves inward by one element and keeps swapping again. The for loop iterates over only half the length since the second half of the array would already be swapped out.
   ```
   static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length / 2; i += 1) {
