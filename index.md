@@ -56,7 +56,14 @@ public void testReverseInPlaceNoFailure() {
     assertArrayEquals(new int[]{3, 2, 1}, arr);
 }
 ```
+
+![Image](failure.png)
+-The problem with the failure-inducing input was that the method ran where it ended up overwriting each element of the array with the value at the corresponding position from the end of the array(instead of reverseing the elements).
+
+![Image](non-failure.png)
+-Here the non-failure input correctly passes the tester.
 Here with this input, the method correctly 
+
 Bug fix:
  -Original code:
  ```
@@ -76,8 +83,6 @@ Bug fix:
     }
 }
 ```
-
-The fixed code addresses the issue by using a temp variable to swap the elements in place so that the array is reversed correctly. The problem with the first version of the code was that it overwrote each element of the array with the corresponding element from the end.
 
 # Part 3
 
